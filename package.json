@@ -1,0 +1,26 @@
+{
+    "name": "fountain",
+    "displayName": "Fountain",
+    "description": "Add Fountain language support",
+    "version": "0.0.1",
+    "publisher": "massivedanger",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "fountain",
+            "aliases": ["Fountain", "fountain"],
+            "extensions": [".fountain",".spmd"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "fountain",
+            "scopeName": "text.source.fountain",
+            "path": "./syntaxes/fountain.tmLanguage"
+        }]
+    }
+}
